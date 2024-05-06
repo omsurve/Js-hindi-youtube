@@ -1,0 +1,11 @@
+const accountId = 123
+let accountName = "Om"
+var accountPassword = "4455"
+
+//accountId= 1   //Not allowes
+accountName="Raj"
+
+/* Prefer not to use Var because this have problem related to scope */
+console.log(accountId);
+console.table([accountId,accountName,accountPassword])
+

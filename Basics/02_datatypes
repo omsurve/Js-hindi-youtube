@@ -1,0 +1,23 @@
+"use strict" //New version of js
+//alert(3+3)
+
+console.log(3
+    +3);     //Code readability should be higher priority 
+
+console.log("Addition") 
+
+let name= "om"
+let number = 123
+let isLogiedin = true
+let state = null
+
+// number => 2 to pawre of 53
+// bigint =>
+// string => ""
+// boolean => true/false
+// null => standalone value
+// undefine => note define 
+// symbol => unique
+
+console.log(typeof undefined) //type is undefined
+console.log(typeof null) // type is object
