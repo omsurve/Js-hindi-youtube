@@ -1,0 +1,1 @@
+myArray1.shift()
