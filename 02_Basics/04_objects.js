@@ -60,3 +60,32 @@ console.log(Object.entries(tinderUser));
 
 // To check the property exist or not
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+// Next lecture---->
+
+const course = {
+    courseName : "Js in hindi",
+    coursePrice : "1000",
+    courseInstructure : "Hitesh"
+}
+
+course.courseInstructure; // Normal way to access
+
+// Destructuring of object ,IMP* 
+const {courseInstructure : instructure} = course
+console.log(instructure); // To increase accessability
+
+// Data in Jason format in boject or array
+
+// {
+//     "courseName ": "Js in hindi",
+//     "coursePrice ": "1000",
+//     "courseInstructure ": "Hitesh
+
+// }
+
+[
+    {},
+    {},
+    {}
+]
