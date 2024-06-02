@@ -16,9 +16,8 @@ console.log(all_heros);
 // Spread two array 
 const all_new_heros = [...marval_heros, ...dc_heros]
 
+//Convert below array into single array
 const another_array = [1,2,3,[4,5,6],[7,[8,9]]]
-
-//Convert above array into single array
 const real_another_array = another_array.flat(Infinity);
 
 console.log(real_another_array);

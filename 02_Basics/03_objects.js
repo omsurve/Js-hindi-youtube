@@ -40,8 +40,8 @@ console.log(JsUseer);
 JsUseer.greeting = function(){
     console.log("Hello Js users");
 }
-console.log(JsUseer.greeting);
-console.log(JsUseer.greeting());
+console.log(JsUseer.greeting); // It returns a referance
+console.log(JsUseer.greeting()); // Call
 
 JsUseer.greetingTwo = function(){
     console.log(`Hello Js User, ${this.name}`);

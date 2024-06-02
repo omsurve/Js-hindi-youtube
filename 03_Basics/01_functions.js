@@ -27,3 +27,35 @@ function loginUserMessage(username){
     return `${username}, Just logged in`
 }
 console.log(loginUserMessage("Om"));
+
+// Lecture 2
+
+// Rest [...num1]
+function calculateCarPrice(...num1){
+    return num1
+}
+console.log(calculateCarPrice(100,200,300,400,500));
+
+// Object passing to function
+const user={
+    userName :"Om",
+    price : "2000"
+}
+
+function handleObject(anyUser){
+    console.log(`Username is ${anyUser.userName} and price is ${anyUser.price}`);
+}
+handleObject(user);
+
+// handleObject({
+//     userName:"Om",
+//     prices:"2000"     <=  Here is the problem by passing prices insted of passing price
+// });
+
+// Array passing to function
+function returnSecondVal(anyArray){
+    console.log(`Here is the second value of array ${anyArray[1]}`);
+}
+
+returnSecondVal([100,200,300,400])
+
