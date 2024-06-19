@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    // Set Interval function
+    const start = document.querySelector('#start')
+    const stop = document.querySelector('#stop')
+    let startInterval
+    let intervalRef 
+    let count = 1
+
+    start.addEventListener('click',function(){
+
+        startInterval = function startInterval(){
+            console.log(count + "Hello Ganesh , "+ Date.now())
+            count++
+        }
+
+        intervalRef = setInterval(startInterval,1000)
+    })
+    // intervalRef = setInterval(startInterval,1000)
+
+    stop.addEventListener('click',function(){
+        clearInterval(intervalRef)
+
+    })
+
+</script>
+</html>
